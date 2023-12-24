@@ -174,3 +174,151 @@
         <a class="next2" onclick="plus2Slides(1)">❯</a>
       </div>
     </div>
+    <!--Album-->
+    
+<!--Clippers Page-->
+      <style>
+        .slideshow-container {
+          max-width: 800px;
+          position: relative;
+          margin: auto;
+        }
+    
+        .myVideoSlide {
+          display: none;
+          width: 100%;
+        }
+    
+        .controls {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+        }
+      </style>
+    </head>
+    <body>
+    
+    <!-- Video Slideshow Container -->
+    <div class="slideshow-container">
+      <!-- Video Slide 1 -->
+      <div class="myVideoSlide">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dd33KWeTUkQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    
+      <!-- Video Slide 2 -->
+      <div class="myVideoSlide">
+        <!-- Replace the video ID in the src attribute -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    
+      <!-- Add more video slides as needed -->
+    
+      <!-- Navigation Controls -->
+      <div class="controls">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+      </div>
+    </div>
+    
+    <script>
+      let currentSlide = 0;
+    
+      function showSlide(n) {
+        const slides = document.querySelectorAll('.myVideoSlide');
+        
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+    
+        // Show the selected slide
+        slides[n].style.display = 'block';
+        currentSlide = n;
+      }
+    
+      function prevSlide() {
+        if (currentSlide > 0) {
+          showSlide(currentSlide - 1);
+        } else {
+          showSlide(slides.length - 1);
+        }
+      }
+    
+      function nextSlide() {
+        const slides = document.querySelectorAll('.myVideoSlide');
+        
+        if (currentSlide < slides.length - 1) {
+          showSlide(currentSlide + 1);
+        } else {
+          showSlide(0);
+        }
+      }
+    
+      // Show the first slide on page load
+      showSlide(currentSlide);
+    </script>
+ </body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video Slideshow with Timeline</title>
+    <style>
+        .timeline-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .timeline-bar {
+            height: 10px;
+            background-color: #ccc;
+            width: 100%;
+            position: relative;
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0;
+            position: absolute;
+        }
+
+        .timeline-date {
+            flex: 1;
+            text-align: center;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Timeline -->
+<div class="timeline-container">
+    <div class="timeline-bar">
+        <div class="timeline-progress"></div>
+    </div>
+    <div class="timeline-date">Date 1</div>
+    <div class="timeline-date">Date 2</div>
+    <!-- Add more dates as needed -->
+</div>
+
+<script>
+    const timelineProgress = document.querySelector('.timeline-progress');
+    const timelineDates = document.querySelectorAll('.timeline-date');
+    const totalSlides = timelineDates.length; // Assuming each date corresponds to a slide
+    const progressWidth = (currentSlide / (totalSlides - 1)) * 100;
+
+    timelineProgress.style.width = `${progressWidth}%`;
+
+    for (let i = 0; i < totalSlides; i++) {
+        timelineDates[i].style.fontWeight = i === currentSlide ? 'bold' : 'normal';
+    }
+</script>
+
+</body>
+</html>
+
+    

@@ -324,9 +324,24 @@
     for (let i = 0; i < totalSlides; i++) {
         timelineDates[i].style.fontWeight = i === currentSlide ? 'bold' : 'normal';
     }
-</script>
+//Audio Model
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+  audio.volume = 0.3;
+}
+//Comic Model
+  var model2 = document.getElementById("ComicModel");
+  var btn2 = document.getElementById("comicbtn");
+  var span2 = document.getElementsByClassName("close2")[0];
 
-</body>
-</html>
+  btn2.onclick = function () {
+    model2.style.display = "block";
+  };
 
-    
+  span2.onclick = function () {
+    model2.style.display = "none";
+  };
+  function closeComicModel() {
+    model2.style.display = "none";
+  }

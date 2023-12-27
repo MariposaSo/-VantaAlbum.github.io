@@ -18,8 +18,7 @@
         <button id="creditBtn"></button>
         <button id="musicvideobtn"></button>
       </div>
-<!--Background-->
-   <div class="slideshow-container1" style="background-image: url('Vantacrow Birthday Background.png');"></div>
+      <div class="slideshow-container1" style="background-image: url('Vantacrow Birthday Background.png');"></div>
     </div>
     <div id="myModal" class="modal"></div>
     <div class="modal-content">
@@ -43,9 +42,9 @@
     <!-- ComicModel -->
     <div id="ComicModel" class="model2">
       <div class="model-content2">
-        <div class="modal-header2">
-          <span class="close2" onclick="closeComicModel()">&times;</span>
-          <h2>Comics</h2>
+          <div class="modal-header2">
+              <span class="close2" onclick="closeComicModel()">&times;</span>
+              <h2>Comics</h2>
         </div>
         <div class="slideshowcontainer2">
           <div class="my2Slide fade">
@@ -179,11 +178,11 @@
     <!--Album-->
     <div id="AlbumModel" class="model3">
       <div class="model-content3">
-        <div class="modal-header3">
-          <span class="close3" onclick="closeAlbumModel()">&times;</span>
-          <h2>Album</h2>
-        </div>
-    <div class="slideshowcontainer3">          
+          <div class="modal-header3">
+              <span class="close3" onclick="closeAlbumModel()">&times;</span>
+              <h2>Album</h2>
+          </div>
+          <div class="slideshowcontainer3">   
       <div class="my2Slide fade">
             <img src="imagesource1.jpg" alt="Album 1" style="width: 100%;">
           </div>
@@ -314,26 +313,26 @@
     </div>
        
 <!--Clippers Page-->
-      <style>
-        .slideshow-container {
-          max-width: 800px;
-          position: relative;
-          margin: auto;
-        }
-    
-        .myVideoSlide {
-          display: none;
-          width: 100%;
-        }
-    
-        .controls {
-          position: absolute;
-          top: 50%;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          transform: translateY(-50%);
-        }
+<style>
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+
+  .myVideoSlide {
+    display: none;
+    width: 100%;
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
       </style>
     </head>
     <body>
@@ -359,8 +358,7 @@
         <button onclick="nextSlide()">Next</button>
       </div>
     </div>
-    
-    <script>
+   <script>
       let currentSlide = 0;
     
       function showSlide(n) {
@@ -423,7 +421,7 @@
         .timeline-date {
             flex: 1;
             text-align: center;
-            margin: 0 5px;
+            margin: 0.5px;
         }
     </style>
 </head>
@@ -450,42 +448,42 @@
         timelineDates[i].style.fontWeight = i === currentSlide ? 'bold' : 'normal';
     }
 //Audio Model
-function play() {
-  var audio = document.getElementById("audio");
-  audio.play();
-  audio.volume = 0.3;
-}
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+      audio.volume = 0.3;
+    }
 //Comic Model
-  var model2 = document.getElementById("ComicModel");
-  var btn2 = document.getElementById("comicbtn");
-  var span2 = document.getElementsByClassName("close2")[0];
+var model2Comic = document.getElementById("ComicModel");
+   var btn2Comic = document.getElementById("comicbtn");
+   var span2Comic = document.getElementsByClassName("close2")[0];
+ btn2Comic.onclick = function () {
+      model2Comic.style.display = "block";
+    };
 
-  btn2.onclick = function () {
-    model2.style.display = "block";
-  };
+    span2Comic.onclick = function () {
+      model2Comic.style.display = "none";
+    };
 
-  span2.onclick = function () {
-    model2.style.display = "none";
-  };
-  function closeComicModel() {
-    model2.style.display = "none";
-  }
+    function closeComicModel() {
+      model2Comic.style.display = "none";
+    }
 
   //Album Model 
-  var model2 = document.getElementById("AlbumModel");
-  var btn2 = document.getElementById("Albumbtn");
-  var span2 = document.getElementsByClassName("close3")[0];
+  var model3Album = document.getElementById("AlbumModel");
+  var btn3Album = document.getElementById("albumbtn");
+  var span3Album = document.getElementsByClassName("close3")[0];
+  btn3Album.onclick = function () {
+      model3Album.style.display = "block";
+    };
 
-  btn2.onclick = function () {
-    model2.style.display = "block";
-  };
+    span3Album.onclick = function () {
+      model3Album.style.display = "none";
+    };
 
-  span2.onclick = function () {
-    model2.style.display = "none";
-  };
-  function closeComicModel() {
-    model2.style.display = "none";
-  }
+    function closeAlbumModel() {
+      model3Album.style.display = "none";
+    }
 //Video Slides
   let currentSlide = 0;
 
@@ -534,6 +532,5 @@ function show3Slides (n) {
 slides[slides3Index-1].style.display = "block";
 let slide3Index = 1;
 show3Slides(slide3Index);
-</script>
+  </script>
 </html>
-

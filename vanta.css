@@ -1,0 +1,27 @@
+/*Button Model Code*/
+.btn-group button {
+    margin: 5px;
+    padding: 10px;
+    transition: transform 0.3 ease-in-out;
+}
+.btn-group button:hover {
+    transform: scale(1.1);
+}
+/*Model Animation*/
+.model-content2, .model-content3 {
+    opacity: 20;
+    transform: scale(0.7);
+    transition: opacity 0.3s,ease-in-out,transform 0.3s, ease-in-out;
+}
+.model2, .model3 
+.model-content2, .model-content3 {
+    visibility: hidden;
+}
+.model2.active, .model3.active {
+    visibility: visible;
+    transition: visibility 0s ease-in-out 0s;
+}
+.model2.active .model-content2, .model3.active .model-content3 {
+    opacity: 1;
+    transform: scale(1)
+}

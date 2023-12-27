@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vantacrow Birthday Spawn Date</title>
-    <meta name="description" content="Celebrating Vantacrow's spawn!">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vantacrow Birthday Spawn Date</title>
+  <meta name="description" content="Celebrating Vantacrow's spawn!">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+     </style>
+</head>
+<body>
     <!--Overlay-->
     <div class="main">
       <div class="btn-group">
@@ -20,31 +22,32 @@
       </div>
       <div class="slideshow-container1" style="background-image: url('Vantacrow Birthday Background.png');"></div>
     </div>
-    <div id="myModal" class="modal"></div>
-    <div class="modal-content">
-      <div class="modal-header">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
         <!--WriterMessage Intro Content-->
-        <span class="close" oneclick="closeModel()">&times;</span>
+        <span class="close" onclick="closeModel()">&times;</span>
         <h2>Vantacrow Spawn Day</h2>
-        <div>
-          <div class="modal-body"></div>
+        <div class="modal-body"></div>
         </div>
         <!--Body Text if needed-->
         <p>YAY VANTA</p>
       </div>
       <div class="modal-body">
         <p>
-          <strong>The Vantacrow Photo Album</strong> text written by writing team Let's Get Celebrating woooo! </a>
+    <strong>The Vantacrow Photo Album
+    </strong> text written by writing team Let's Get Celebrating woooo!
         </p>
       </div>
     </div>
-    </div>
     <!-- ComicModel -->
-    <div id="ComicModel" class="model2">
-      <div class="model-content2">
-          <div class="modal-header2">
-              <span class="close2" onclick="closeComicModel()">&times;</span>
-              <h2>Comics</h2>
+    <div id="ComicModel" class="modal2">
+      <div class="modal-content2">
+        <div class="modal-header2">
+          <span class="close2" onclick="closeComicModel()">&times;</span>
+          <h2>Comics</h2>
+        </div>
+        <div class="slideshowcontainer2">
         </div>
         <div class="slideshowcontainer2">
           <div class="my2Slide fade">
@@ -137,6 +140,7 @@
           <div class="my2Slide fade">
             <img src="imagesource30.jpg" alt="Comic 30" style="width: 100%;">
           </div>
+          
         </div>    
         <br>
         <div style="text-align:center">
@@ -176,14 +180,14 @@
       </div>
     </div>
     <!--Album-->
-    <div id="AlbumModel" class="model3">
-      <div class="model-content3">
-          <div class="modal-header3">
-              <span class="close3" onclick="closeAlbumModel()">&times;</span>
-              <h2>Album</h2>
-          </div>
-          <div class="slideshowcontainer3">   
-      <div class="my2Slide fade">
+    <div id="AlbumModel" class="modal3">
+      <div class="modal-content3">
+        <div class="modal-header3">
+          <span class="close3" onclick="closeAlbumModel()">&times;</span>
+          <h2>Album</h2>
+        </div>
+        <div class="slideshowcontainer3">
+         <div class="my2Slide fade">
             <img src="imagesource1.jpg" alt="Album 1" style="width: 100%;">
           </div>
           <div class="my2Slide fade">
@@ -333,13 +337,10 @@
     justify-content: space-between;
     transform: translateY(-50%);
   }
-      </style>
-    </head>
-    <body>
-    
+     </style>
     <!-- Video Slideshow Container -->
-    <div class="slideshow-container">
-      <!-- Video Slide 1 -->
+    <div class="slideshow-container">     
+       <!-- Video Slide 1 -->
       <div class="myVideoSlide">
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dd33KWeTUkQ" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -357,7 +358,6 @@
         <button onclick="prevSlide()">Previous</button>
         <button onclick="nextSlide()">Next</button>
       </div>
-    </div>
    <script>
       let currentSlide = 0;
     
@@ -395,7 +395,6 @@
       // Show the first slide on page load
       showSlide(currentSlide);
     </script>
- </body>
     <title>Video Slideshow with Timeline</title>
     <style>
         .timeline-container {
@@ -421,12 +420,9 @@
         .timeline-date {
             flex: 1;
             text-align: center;
-            margin: 0.5px;
+            margin: 0 5px;
         }
     </style>
-</head>
-<body>
-
 <!-- Timeline -->
 <div class="timeline-container">
     <div class="timeline-bar">

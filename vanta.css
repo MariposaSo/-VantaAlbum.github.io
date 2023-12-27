@@ -9,7 +9,7 @@
 }
 /*Model Animation*/
 .model-content2, .model-content3 {
-    opacity: 20;
+    opacity: 0;
     transform: scale(0.7);
     transition: opacity 0.3s,ease-in-out,transform 0.3s, ease-in-out;
 }

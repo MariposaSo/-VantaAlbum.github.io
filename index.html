@@ -406,6 +406,42 @@ function show3Slides (n) {
 slides[slides3Index-1].style.display = "block";
 let slide3Index = 1;
 show3Slides(slide3Index);
+  
+  // First set of functions JAVASCRIPT
+function openModuleFirstSet(moduleId) {
+  closeAllModules();
+  document.getElementById(moduleId).style.display = "block";
+}
+
+function closeAllModulesFirstSet() {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    modal.style.display = 'none';
+  });
+}
+
+function closeModuleFirstSet(moduleId) {
+  document.getElementById(moduleId).style.display = "none";
+}
+
+// Second set of functions
+function openModuleSecondSet(moduleId, content) {
+  closeAllModules();
+  document.getElementById(moduleId).style.display = "block";
+  setModalContent(content);
+}
+
+function closeAllModulesSecondSet() {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    modal.style.display = 'none';
+  });
+}
+
+function setModalContent(content) {
+  const modalBody = document.querySelector('.modal-body');
+  modalBody.innerHTML = `<p>${content} Content here</p>`;
+}
 </script>
   </div>
 </body>

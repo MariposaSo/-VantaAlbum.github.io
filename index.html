@@ -442,6 +442,28 @@ function setModalContent(content) {
   const modalBody = document.querySelector('.modal-body');
   modalBody.innerHTML = `<p>${content} Content here</p>`;
 }
+//Trigger Buttons
+  document.addEventListener('DOMContentLoaded', function() {
+  const introBtn = document.getElementById('openMyModalButton');
+  const comicsBtn = document.getElementById('comicbtn');
+  const albumBtn = document.getElementById('albumbtn');
+  
+  const modelIntro = document.getElementById('myModal');
+  const modelComics = document.getElementById('ComicModel');
+  const modelAlbum = document.getElementById('AlbumModel');
+
+  introBtn.addEventListener('click', function() {
+    openModule('myModal');
+  });
+
+  comicsBtn.addEventListener('click', function() {
+    openModule('ComicModel');
+  });
+
+  albumBtn.addEventListener('click', function() {
+    openModule('AlbumModel');
+  });
+});
 </script>
   </div>
 </body>

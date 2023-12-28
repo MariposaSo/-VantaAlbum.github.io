@@ -48,7 +48,7 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     position: absolute;
-    background-position: center;
+    background-position: center center;
 }
 {
     box-sizing: border-box;

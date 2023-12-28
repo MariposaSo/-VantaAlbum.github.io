@@ -47,6 +47,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: absolute;
     background-position: center;
     background-position-x: center;

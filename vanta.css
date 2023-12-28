@@ -56,3 +56,9 @@ element.style {
     background-position-y: center;
     z-index: 2;
 }
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}

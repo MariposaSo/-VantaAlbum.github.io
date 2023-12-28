@@ -55,10 +55,3 @@ body {
     background-position-y: center;
     z-index: 2;
 }
-div{
-    display: block;
-}
-img {
-      display: block;
-      margin: 0 auto;
-    }

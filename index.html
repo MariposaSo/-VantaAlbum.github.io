@@ -2,157 +2,196 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vantacrow Birthday Spawn Date</title>
-    <meta name="description" content="Celebrating Vantacrow's spawn!">
-    <link rel="stylesheet" href="vanta.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vantacrow Birthday Spawn Date</title>
+  <meta name="description" content="Celebrating Vantacrow's spawn!">
+  <link rel="stylesheet" href="vanta.css">
   <style>
-      /* add any custom styles we need here */
-    </style>
+    /* Styles for modal container, modal content, and close button */
+    .modal-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      visibility: hidden;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      max-height: 80%;
+      overflow: auto;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    /* Styles for main container */
+    .main {
+      position: relative;
+    }
+
+    /* Add your other styles here */
+
+  </style>
 </head>
 <body>
-    <!--Overlay-->
-    <div class="main">
-        <div class="btn-group">
-            <button onclick="openModuleFirstSet('myModal')">Intro</button>
-            <button onclick="openModuleSecondSet('ComicModel', 'Comics')">Comics</button>
-            <button onclick="openModuleThirdSet('AlbumModel', 'Albums')">Album</button>
-            <button onclick="openModule('clipsbtn')">clips</button>
-            <button onclick="openModule('musicbtn')">music</button>
-            <button onclick="openModule('creditbtn')">credit</button>
-      </div>
-      <!--Background Image-->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close" onclick="closeModule('myModal')">×</span>
-                <h2>Vantacrow Spawn Day</h2>
-            </div>
-                <p>YAY VANTA</p>
-                <p><strong>The Vantacrow Photo Album</strong> text written by writing team Let's Get Celebrating woooo!</p>
-            </div>
-        </div>
+
+  <div class="main">
+    <div class="btn-group">
+      <button id="introBtn">Intro</button>
+      <button id="comicsBtn">Comics</button>
+      <button id="albumBtn">Album</button>
     </div>
-    <!-- ComicModel -->
-    <div id="ComicModel" class="modal">
-      <div id ="Comics" class="openModuleSecondSet"></div>
+
+    <!-- Overlay for Intro -->
+    <div id="myModalIntro" class="modal">
+      <div class="modal-container" onclick="toggleModule('myModalIntro')"></div>
+      <div class="modal-content">
+        <span class="close" onclick="toggleModule('myModalIntro')">×</span>
+        <h2>Vantacrow Spawn Day</h2>
+        <div></div>
+        <p>YAY VANTA</p>
+        <p><strong>The Vantacrow Photo Album</strong> text written by writing team Let's Get Celebrating woooo!</p>
+      </div>
+    </div>
+
+    <!-- Comic Modal -->
+    <div id="ComicsModal" class="modal">
+      <div class="modal-container"></div>
       <div class="modal-content">
         <div class="modal-header">
-              <span class="close" onclick="closeModule('ComicModel')">&times;</span>
-              <h2>Comics</h2>
-          </div>
-          <div class="slideshow-containerB">
-          <div class="my2Slide fade">
-            <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Comic 1" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Comic 2" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource3.jpg" alt="Comic 3" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource4.jpg" alt="Comic 4" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource5.jpg" alt="Comic 5" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource6.jpg" alt="Comic 6" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource7.jpg" alt="Comic 7" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource8.jpg" alt="Comic 8" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource9.jpg" alt="Comic 9" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource10.jpg" alt="Comic 10" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource11.jpg" alt="Comic 11" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource12.jpg" alt="Comic 12" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource13.jpg" alt="Comic 13" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource14.jpg" alt="Comic 14" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource15.jpg" alt="Comic 15" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource16.jpg" alt="Comic 16" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource17.jpg" alt="Comic 17" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource18.jpg" alt="Comic 18" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource19.jpg" alt="Comic 19" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource20.jpg" alt="Comic 20" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource21.jpg" alt="Comic 21" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource22.jpg" alt="Comic 22" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource23.jpg" alt="Comic 23" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource24.jpg" alt="Comic 24" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource25.jpg" alt="Comic 25" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource26.jpg" alt="Comic 26" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource27.jpg" alt="Comic 27" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource28.jpg" alt="Comic 28" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource29.jpg" alt="Comic 29" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource30.jpg" alt="Comic 30" style="width: 100%;"></div>
-      </div><br>
-    </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="current2Slide(1)"></span> 
-          <span class="dot" onclick="current2Slide(2)"></span> 
-          <span class="dot" onclick="current2Slide(3)"></span> 
-          <span class="dot" onclick="current2Slide(4)"></span> 
-          <span class="dot" onclick="current2Slide(5)"></span> 
-          <span class="dot" onclick="current2Slide(6)"></span> 
-          <span class="dot" onclick="current2Slide(7)"></span> 
-          <span class="dot" onclick="current2Slide(8)"></span> 
-          <span class="dot" onclick="current2Slide(9)"></span> 
-          <span class="dot" onclick="current2Slide(10)"></span> 
-          <span class="dot" onclick="current2Slide(11)"></span> 
-          <span class="dot" onclick="current2Slide(12)"></span> 
-          <span class="dot" onclick="current2Slide(13)"></span> 
-          <span class="dot" onclick="current2Slide(14)"></span> 
-          <span class="dot" onclick="current2Slide(15)"></span> 
-          <span class="dot" onclick="current2Slide(16)"></span> 
-          <span class="dot" onclick="current2Slide(17)"></span> 
-          <span class="dot" onclick="current2Slide(18)"></span> 
-          <span class="dot" onclick="current2Slide(19)"></span> 
-          <span class="dot" onclick="current2Slide(20)"></span> 
-          <span class="dot" onclick="current2Slide(21)"></span> 
-          <span class="dot" onclick="current2Slide(22)"></span> 
-          <span class="dot" onclick="current2Slide(23)"></span> 
-          <span class="dot" onclick="current2Slide(24)"></span> 
-          <span class="dot" onclick="current2Slide(25)"></span> 
-          <span class="dot" onclick="current2Slide(26)"></span> 
-          <span class="dot" onclick="current2Slide(27)"></span> 
-          <span class="dot" onclick="current2Slide(28)"></span> 
-          <span class="dot" onclick="current2Slide(29)"></span> 
-          <span class="dot" onclick="current2Slide(30)"></span> 
+          <span class="close" onclick="closeModule('ComicsModal')">×</span>
+          <h2>Comics</h2>
         </div>
-        <div style="text-align:center"></div><a class="prev2" onclick="plus2Slides(-1)">❮</a> <a class="next2" onclick="plus2Slides(1)">❯</a>
-    </div>
-    <!--Album-->
-    <div id="AlbumModel" class="modal">
-      <div id ="Albums" class="openModuleThirdSet"></div>
-      <div class="modal-content">
-          <div class="modal-header">
-              <span class="close" onclick="closeModule('AlbumModel')">&times;</span>
-              <h2>Album</h2>
-          </div>
-          <div class="slideshow-containerD">
-         <div class="my2Slide fade">
-          <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Album 1" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Album 2" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource3.jpg" alt="Album 3" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource4.jpg" alt="Album 4" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource5.jpg" alt="Album 5" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource6.jpg" alt="Album 6" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource7.jpg" alt="Album 7" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource8.jpg" alt="Album 8" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource9.jpg" alt="Album 9" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource10.jpg" alt="Album 10" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource11.jpg" alt="Album 11" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource12.jpg" alt="Album 12" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource13.jpg" alt="Album 13" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource14.jpg" alt="Album 14" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource15.jpg" alt="Album 15" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource16.jpg" alt="Album 16" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource17.jpg" alt="Album 17" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource18.jpg" alt="Album 18" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource19.jpg" alt="Album 19" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource20.jpg" alt="Album 20" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource21.jpg" alt="Album 21" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource22.jpg" alt="Album 22" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource23.jpg" alt="Album 23" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource24.jpg" alt="Album 24" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource25.jpg" alt="Album 25" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource26.jpg" alt="Album 26" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource27.jpg" alt="Album 27" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource28.jpg" alt="Album 28" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource29.jpg" alt="Album 29" style="width: 100%;"></div>
-        <div class="my2Slide fade"><img src="imagesource30.jpg" alt="Album 30" style="width: 100%;"></div>
-        </div>    
-        <br>
+        <div class="slideshow-containerB">
+          <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Comic 1" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Comic 2" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource3.jpg" alt="Comic 3" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource4.jpg" alt="Comic 4" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource5.jpg" alt="Comic 5" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource6.jpg" alt="Comic 6" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource7.jpg" alt="Comic 7" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource8.jpg" alt="Comic 8" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource9.jpg" alt="Comic 9" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource10.jpg" alt="Comic 10" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource11.jpg" alt="Comic 11" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource12.jpg" alt="Comic 12" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource13.jpg" alt="Comic 13" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource14.jpg" alt="Comic 14" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource15.jpg" alt="Comic 15" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource16.jpg" alt="Comic 16" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource17.jpg" alt="Comic 17" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource18.jpg" alt="Comic 18" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource19.jpg" alt="Comic 19" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource20.jpg" alt="Comic 20" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource21.jpg" alt="Comic 21" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource22.jpg" alt="Comic 22" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource23.jpg" alt="Comic 23" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource24.jpg" alt="Comic 24" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource25.jpg" alt="Comic 25" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource26.jpg" alt="Comic 26" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource27.jpg" alt="Comic 27" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource28.jpg" alt="Comic 28" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource29.jpg" alt="Comic 29" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource30.jpg" alt="Comic 30" style="width: 100%;"></div>
+        </div><br>  
+        <br>  
+        </div>
+        <!-- navigation dots for the album slideshow -->
         <div style="text-align:center">
+          <span class="dot" onclick="current2Slide(1)"></span>
+          <div style="text-align:center">
+            <span class="dot" onclick="current2Slide(1)"></span> 
+            <span class="dot" onclick="current2Slide(2)"></span> 
+            <span class="dot" onclick="current2Slide(3)"></span> 
+            <span class="dot" onclick="current2Slide(4)"></span> 
+            <span class="dot" onclick="current2Slide(5)"></span> 
+            <span class="dot" onclick="current2Slide(6)"></span> 
+            <span class="dot" onclick="current2Slide(7)"></span> 
+            <span class="dot" onclick="current2Slide(8)"></span> 
+            <span class="dot" onclick="current2Slide(9)"></span> 
+            <span class="dot" onclick="current2Slide(10)"></span> 
+            <span class="dot" onclick="current2Slide(11)"></span> 
+            <span class="dot" onclick="current2Slide(12)"></span> 
+            <span class="dot" onclick="current2Slide(13)"></span> 
+            <span class="dot" onclick="current2Slide(14)"></span> 
+            <span class="dot" onclick="current2Slide(15)"></span> 
+            <span class="dot" onclick="current2Slide(16)"></span> 
+            <span class="dot" onclick="current2Slide(17)"></span> 
+            <span class="dot" onclick="current2Slide(18)"></span> 
+            <span class="dot" onclick="current2Slide(19)"></span> 
+            <span class="dot" onclick="current2Slide(20)"></span> 
+            <span class="dot" onclick="current2Slide(21)"></span> 
+            <span class="dot" onclick="current2Slide(22)"></span> 
+            <span class="dot" onclick="current2Slide(23)"></span> 
+            <span class="dot" onclick="current2Slide(24)"></span> 
+            <span class="dot" onclick="current2Slide(25)"></span> 
+            <span class="dot" onclick="current2Slide(26)"></span> 
+            <span class="dot" onclick="current2Slide(27)"></span> 
+            <span class="dot" onclick="current2Slide(28)"></span> 
+            <span class="dot" onclick="current2Slide(29)"></span> 
+            <span class="dot" onclick="current2Slide(30)"></span> 
+          </div>      
+          <div style="text-align:center"></div><a class="prev2" onclick="plus2Slides(-1)">❮</a> <a class="next2" onclick="plus2Slides(1)">❯</a>
+        </div>
+        </div>
+    <!-- Album Modal -->
+    <div id="AlbumsModal" class="modal">
+      <div class="modal-container"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" onclick="closeModule('AlbumsModal')">×</span>
+          <h2>Album</h2>
+        </div>
+        <div class="slideshow-containerD">
+          <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Album 1" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Album 2" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource3.jpg" alt="Album 3" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource4.jpg" alt="Album 4" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource5.jpg" alt="Album 5" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource6.jpg" alt="Album 6" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource7.jpg" alt="Album 7" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource8.jpg" alt="Album 8" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource9.jpg" alt="Album 9" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource10.jpg" alt="Album 10" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource11.jpg" alt="Album 11" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource12.jpg" alt="Album 12" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource13.jpg" alt="Album 13" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource14.jpg" alt="Album 14" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource15.jpg" alt="Album 15" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource16.jpg" alt="Album 16" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource17.jpg" alt="Album 17" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource18.jpg" alt="Album 18" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource19.jpg" alt="Album 19" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource20.jpg" alt="Album 20" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource21.jpg" alt="Album 21" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource22.jpg" alt="Album 22" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource23.jpg" alt="Album 23" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource24.jpg" alt="Album 24" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource25.jpg" alt="Album 25" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource26.jpg" alt="Album 26" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource27.jpg" alt="Album 27" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource28.jpg" alt="Album 28" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource29.jpg" alt="Album 29" style="width: 100%;"></div>
+          <div class="my2Slide fade"><img src="imagesource30.jpg" alt="Album 30" style="width: 100%;"></div>
+          </div>    
+        <br>
+        <!-- navigation dots for the album slideshow -->
+        <div style="text-align:center">
+          <span class="dot" onclick="current3Slide(1)"></span>
           <span class="dot" onclick="current3Slide(1)"></span> 
           <span class="dot" onclick="current3Slide(2)"></span> 
           <span class="dot" onclick="current3Slide(3)"></span> 
@@ -183,151 +222,100 @@
           <span class="dot" onclick="current3Slide(28)"></span> 
           <span class="dot" onclick="current3Slide(29)"></span> 
           <span class="dot" onclick="current3Slide(30)"></span> 
-        </div>
-        <div style="text-align:center"></div><a class="prev2" onclick="plus3Slides(-1)">❮</a> <a class="next2" onclick="plus3Slides(1)">❯</a>
+          <div></div>
+        <!-- previous and next buttons for the album slideshow -->
+        <div style="text-align:center">
+          <a class="prev2" onclick="plus3Slides(-1)">❮</a>
+          <a class="next2" onclick="plus3Slides(1)">❯</a>
+        </div>    </div>
+
+    <!-- other modal sections here -->
+
+    <!-- Clippers Page -->
+    <div class="slideshow-container">
+      <style>
+        .slideshow-container {
+          max-width: 800px;
+          position: relative;
+          margin: auto;
+        }
+    
+        .myVideoSlide {
+          display: none;
+          width: 100%;
+        }
+    
+        .controls {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+        }
+      </style>   
+       </div>
+
+    <!-- Timeline -->
+    <div class="timeline-container">
+      <div class="timeline-bar">
+        <div class="timeline-progress"></div>
       </div>
     </div>
-       
-<!--Clippers Page-->
-<style>
-  .slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-  }
-
-  .myVideoSlide {
-    display: none;
-    width: 100%;
-  }
-
-  .controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-</style>
- <!-- Video Slideshow Container -->
- <div class="slideshow-container">
-    <!-- Video Slide 1 -->
-    <div class="myVideoSlide">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dd33KWeTUkQ" frameborder="0" allowfullscreen></iframe>
-  </div> 
-      <!-- Video Slide 2 -->
-      <div class="myVideoSlide">       
-       <!-- Replace the video ID in the src attribute -->
-       <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-      <!-- Add more video slides as needed -->
-    
-      <!-- Navigation Controls -->
-      <div class="controls">
-        <button onclick="prevSlide()">Previous</button>
-        <button onclick="nextSlide()">Next</button>
-    </div>
-</div>
-   <script>
-      let currentSlide = 0;
-    
-      function showSlide(n) {
-        const slides = document.querySelectorAll('.myVideoSlide');
-        
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = 'none';
-        }
-    
-        // Show the selected slide
-        slides[n].style.display = 'block';
-        currentSlide = n;
-      }
-    
-      function prevSlide() {
-        if (currentSlide > 0) {
-          showSlide(currentSlide - 1);
-        } else {
-          showSlide(slides.length - 1);
-        }
-      }
-    
-      function nextSlide() {
-        const slides = document.querySelectorAll('.myVideoSlide');
-        
-        if (currentSlide < slides.length - 1) {
-          showSlide(currentSlide + 1);
-        } else {
-          showSlide(0);
-        }
-      }
-    
-      // Show the first slide on page load
-      showSlide(currentSlide);
-   </script>
-    <style>
-        .timeline-container {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .timeline-bar {
-            height: 10px;
-            background-color: #ccc;
-            width: 100%;
-            position: relative;
-        }
-
-        .timeline-progress {
-            height: 100%;
-            background-color: #4CAF50;
-            width: 0;
-            position: absolute;
-        }
-
-        .timeline-date {
-            flex: 1;
-            text-align: center;
-            margin: 0 5px;
-        }
-    </style>
-<!-- Timeline -->
-<div class="timeline-container">
-  <div class="timeline-bar">
-      <div class="timeline-progress"></div>
+    <div class="timeline-date">Date 1</div>
+    <div class="timeline-date">Date 2</div>    
   </div>
-  <div class="timeline-date">Date 1</div>
-  <div class="timeline-date">Date 2</div>
-    <!-- Add more dates as needed -->
-</div>
-<script>
-    const timelineProgress = document.querySelector('.timeline-progress');
-    const timelineDates = document.querySelectorAll('.timeline-date');
-    const totalSlides = timelineDates.length; // Assuming each date corresponds to a slide
-    const progressWidth = (currentSlide / (totalSlides - 1)) * 100;
-timelineProgress.style.width = `${progressWidth}%`;
-    for (let i = 0; i < totalSlides; i++) {
-        timelineDates[i].style.fontWeight = i === currentSlide ? 'bold' : 'normal';
+  <style>
+    .timeline-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
     }
-</script>
 
-//Audio Model
-<audio id="audio" src="your-audio-file.mp3"></audio>
+    .timeline-bar {
+      height: 10px;
+      background-color: #ccc;
+      width: 100%;
+      position: relative;
+    }
+
+    .timeline-progress {
+      height: 100%;
+      background-color: #4CAF50;
+      width: 0;
+      position: absolute;
+    }
+
+    .timeline-date {
+      flex: 1;
+      text-align: center;
+      margin: 0.5px;
+    }
+  </style>
+    <!-- Audio Model -->
+    <audio id="audio" src="your-audio-file.mp3"></audio>
+
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        audio.volume = 0.3;
+      }
+    </script>
 <script>
-function play() {
-            var audio = document.getElementById("audio");
-            audio.play();
-            audio.volume = 0.3;
-        }
-      </script>
-<script>
-//Comic Model
-var model2Comic = document.getElementById("ComicModel");
-   var btn2Comic = document.getElementById("comicbtn");
-   var span2Comic = document.getElementsByClassName("close2")[0];
- btn2Comic.onclick = function () {
+  var isOpen = false;
+
+  function toggleModule(moduleId) {
+    var modal = document.getElementById(moduleId);
+    modal.style.visibility = isOpen ? 'hidden' : 'visible';
+    isOpen = !isOpen;
+  }
+      // Java Code
+       // Comic Model
+    var model2Comic = document.getElementById("Comics");
+    var btn2Comic = document.getElementById("Comics");
+    var span2Comic = document.getElementsByClassName("close2")[0];
+    btn2Comic.onclick = function () {
       model2Comic.style.display = "block";
     };
 
@@ -335,15 +323,14 @@ var model2Comic = document.getElementById("ComicModel");
       model2Comic.style.display = "none";
     };
 
-    function closeComicModel() {
+    function closeComics() {
       model2Comic.style.display = "none";
     }
-
-  //Album Model 
-  var model3Album = document.getElementById("AlbumModel");
-  var btn3Album = document.getElementById("albumbtn");
-  var span3Album = document.getElementsByClassName("close3")[0];
-  btn3Album.onclick = function () {
+ // Album Model
+ var model3Album = document.getElementById("Albums");
+    var btn3Album = document.getElementById("Albums");
+    var span3Album = document.getElementsByClassName("close3")[0];
+    btn3Album.onclick = function () {
       model3Album.style.display = "block";
     };
 
@@ -351,12 +338,12 @@ var model2Comic = document.getElementById("ComicModel");
       model3Album.style.display = "none";
     };
 
-    function closeAlbumModel() {
+    function closeAlbums() {
       model3Album.style.display = "none";
     }
-</script>
+  </script>
 <script>
-//Video Slides
+  // Video Slides
   let currentSlides = 0;
 
   function showSlides(n) {
@@ -367,7 +354,7 @@ var model2Comic = document.getElementById("ComicModel");
       slides[i].style.display = 'none';
     }
 
-    // Show the Selected Slide 
+    // Show the Selected Slide
     slides[n].style.display = 'block';
     currentSlide = n;
   }
@@ -382,97 +369,104 @@ var model2Comic = document.getElementById("ComicModel");
     }
   }
 
-  // Show the first slide on page load 
+  // Show the first slide on page load
   showSlide(currentSlide);
- 
-  //Album Gallery Function 
-  function plus3Slides(n) {
+  // Album Gallery Function
+  let slide3Index = 1;
+function plus3Slides(n) {
   show3Slides(slide3Index += n);
-  function current3Slide(n) {
-    show3Slides(slide3Index = n);
-  }
+}
+
+function current3Slide(n) {
+  show3Slides(slide3Index = n);
 }
 function show3Slides(n) {
-    let i;
-    let slides = document.getElementsByClassName("my3Slides");
-    if (n > slides.length) { slides3Index = 1 }
-    if (n < 1) { slide3Index = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slides3Index - 1].style.display = "block";
+  let i;
+  const slides = document.getElementsByClassName("my2Slide");
+  if (n > slides.length) { slide3Index = 1; }
+  if (n < 1) { slide3Index = slides.length; }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slide3Index - 1].style.display = "block";
 }
-slides[slides3Index-1].style.display = "block";
-let slide3Index = 1;
 show3Slides(slide3Index);
-</script>
-<script>
+  </script>
+
+  <script>
     // First set of functions
     function openModuleFirstSet(moduleId) {
       closeAllModulesFirstSet();
-      document.getElementById(moduleId).style.display = "block";
+      document.getElementById(moduleId).style.visibility = "visible";
     }
 
     function closeAllModulesFirstSet() {
-      const modals = document.querySelectorAll('.modal');
+      const modals = document.querySelectorAll('.modal-container');
       modals.forEach(modal => {
-        modal.style.display = 'none';
+        modal.style.visibility = 'hidden';
       });
     }
-
     function closeModuleFirstSet(moduleId) {
-      document.getElementById(moduleId).style.display = "none";
+      document.getElementById(moduleId).style.visibility = "hidden";
     }
 
-    // Second set of functions
-    function openModuleSecondSet(moduleId, content) {
+    function openModuleSecondSet(moduleId) {
       closeAllModulesSecondSet();
-      document.getElementById(moduleId).style.display = "block";
-      setModalContent(content);
+      document.getElementById(moduleId).style.visibility = "visible";
     }
 
     function closeAllModulesSecondSet() {
-      const modals = document.querySelectorAll('.modal');
+      const modals = document.querySelectorAll('.modal-container');
       modals.forEach(modal => {
-        modal.style.display = 'none';
+        modal.style.visibility = 'hidden';
       });
     }
-    function setModalContent(content) {
-      const modalBody = document.querySelector('.modal-body');
-      modalBody.innerHTML = `<p>${content} Content here</p>`;
-    } 
-  </script>
-  <script>
-//Trigger Buttons
-document.addEventListener('DOMContentLoaded', function () {
-    const introBtn = document.getElementById('openMyModalButton');
-    const comicsBtn = document.getElementById('ComicModel');
-    const albumBtn = document.getElementById('AlbumModel');
 
-    const modelIntro = document.getElementById('myModal');
-    const modelComics = document.getElementById('ComicModel');
-    const modelAlbum = document.getElementById('AlbumModel');
+    function closeModule(moduleId) {
+      document.getElementById(moduleId).style.visibility = "hidden";
+    }
 
-    if (introBtn) {
+    // Trigger Buttons
+    document.addEventListener('DOMContentLoaded', function () {
+      closeAllModules();
+
+      const introBtn = document.getElementById('introBtn');
+      const comicsBtn = document.getElementById('comicsBtn');
+      const albumBtn = document.getElementById('albumBtn');
+
+      if (introBtn) {
         introBtn.addEventListener('click', function () {
-            openModuleFirstSet('myModal');
+          toggleModule('myModalIntro');
         });
-    }
+      }
 
-    if (comicsBtn) {
+      if (comicsBtn) {
         comicsBtn.addEventListener('click', function () {
-            openModuleSecondSet('ComicModel', 'Comics');
+          toggleModule('ComicsModal');
         });
+      }
+
+      if (albumBtn) {
+        albumBtn.addEventListener('click', function () {
+          toggleModule('AlbumsModal');
+        });
+      }
+    });
+
+    function toggleModule(moduleId) {
+      const modal = document.getElementById(moduleId);
+      modal.style.visibility = modal.style.visibility === 'visible' ? 'hidden' : 'visible';
     }
 
-    if (albumBtn) {
-    albumBtn.addEventListener('click', function () {
-        openModuleThirdSet('AlbumModel', 'Albums');
-        });
+    function closeAllModules() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        modal.style.visibility = 'hidden';
+      });
     }
-});
-</script>
+    </script>
   </div>
 </body>
 </html>
+
 <img src="Vantacrow Birthday Background.png" class="comic-style1">

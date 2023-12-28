@@ -49,6 +49,7 @@ body {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: absolute;
     background-position: center;
     background-position-x: center;
     background-position-y: center;

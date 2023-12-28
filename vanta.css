@@ -29,7 +29,7 @@
     transform: scale(1);
 }
 
-/* Added missing rules for .model2 and .model3 */
+/* Added .model2 and .model3 */
 .model2.active,
 .model3.active {
     visibility: visible;

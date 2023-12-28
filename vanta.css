@@ -37,31 +37,3 @@
 body {
   background-image: url('Vantacrow Birthday Background.png');
 }
-body {
-    font-weight: bold;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: url('Vantacrow Birthday Background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: absolute;
-    background-position: center;
-    background-position-x: center;
-    background-position-y: center;
-    z-index: 2;
-}
-div {
-    display: block;
-}
-
-body {
-    width: calc(100vw-48px);
-    height: calc(100vh-48px);
-    display: block;
-    cursor: url(Cursor, Vanta.png), auto;
-}

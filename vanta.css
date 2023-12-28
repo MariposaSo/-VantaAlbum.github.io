@@ -34,3 +34,13 @@
 .model3.active {
     visibility: visible;
 }
+body {
+  background-image: url('Vantacrow Birthday Background.png');
+}
+body {
+  font-weight: bold;
+  width: 4569vw;
+  height: 2750vh;
+  background: url('Vantacrow Birthday Background.png');
+ background-size: cover;
+}

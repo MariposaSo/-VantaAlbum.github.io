@@ -49,7 +49,6 @@ body {
     overflow: hidden;
     position: absolute;
     background-position: center;
-    z-index: 2;
 }
 {
     box-sizing: border-box;

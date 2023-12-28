@@ -37,6 +37,7 @@
 body {
   background-image: url('Vantacrow Birthday Background.png');
 }
+}
 body {
     font-weight: bold;
     width: 100vw;
@@ -54,8 +55,7 @@ body {
     background-position-x: center;
     background-position-y: center;
     z-index: 2;
-}
-div {
+}div {
     display: block;
 }
 

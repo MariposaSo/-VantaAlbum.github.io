@@ -46,7 +46,8 @@ element.style {
     overflow-y: hidden;
     position: absolute;
     background-image: url("Vantacrow Birthday Background.png");
-    background-repeat: no-repeat;
+    
+    place-items: center;
     background-size: cover;
     background-position: center;
     background-position-x: center;
@@ -59,7 +60,3 @@ element.style {
 div {
     display: block;
 }
-div {
-      display: grid;
-      place-items: center;
-    }

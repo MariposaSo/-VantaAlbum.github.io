@@ -44,6 +44,12 @@ body {
   background: url('Vantacrow Birthday Background.png');
  background-size: cover;
 background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    background-position: center;
+    z-index: 2;
 }
 {
     box-sizing: border-box;

@@ -39,8 +39,8 @@ body {
 }
 body {
   font-weight: bold;
-  width: 95vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   background: url('Vantacrow Birthday Background.png');
- background-size: cover;
+ background-size: 250px;
 }

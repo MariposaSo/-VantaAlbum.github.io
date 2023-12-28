@@ -57,3 +57,9 @@ body {
 div {
     display: block;
 }
+body {
+    width: calc(100vw-48px);
+    height: calc(100vh-48px);
+    display: block;
+    cursor: url(Cursor.png.png), auto;
+}

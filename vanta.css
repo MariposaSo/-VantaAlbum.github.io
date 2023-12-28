@@ -63,3 +63,7 @@ div {
       display: grid;
       place-items: center;
     }
+element {
+  background-image: url('Vantacrow Birthday Background.png');
+  background-repeat: no-repeat;
+}

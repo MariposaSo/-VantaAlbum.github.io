@@ -58,7 +58,7 @@ body {
 div{
     display: block;
 }
-div {
-      display: grid;
-      place-items: center;
+img {
+      display: block;
+      margin: 0 auto;
     }

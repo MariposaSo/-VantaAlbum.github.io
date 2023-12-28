@@ -12,6 +12,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      position: fixed;
       top: 0;
       left: 0;
       width: 50%;
@@ -27,7 +28,6 @@
       max-width: 80%;
       max-height: 80%;
       overflow: auto;
-      position: absolute;
     }
 
     .close {
@@ -454,7 +454,7 @@ show3Slides(slide3Index);
 
     function toggleModule(moduleId) {
       const modal = document.getElementById(moduleId);
-      modal.style.position = modal.style.visibility === 'visible' ? 'fixed' : 'absolute';    }
+      modal.style.visibility = modal.style.visibility === 'visible' ? 'hidden' : 'visible';
     }
 
     function closeAllModules() {

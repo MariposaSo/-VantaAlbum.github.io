@@ -58,3 +58,7 @@ body {
 div{
     display: block;
 }
+div {
+      display: grid;
+      place-items: center;
+    }

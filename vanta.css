@@ -37,3 +37,22 @@
 body {
   background-image: url('Vantacrow Birthday Background.png');
 }
+element.style {
+}
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    background-image: url("Vantacrow Birthday Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: 2;
+}

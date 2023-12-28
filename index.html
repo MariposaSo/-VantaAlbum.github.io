@@ -2,53 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vantacrow Birthday Spawn Date</title>
-  <meta name="description" content="Celebrating Vantacrow's spawn!">
-  <link rel="stylesheet" href="vanta.css">
-  <title>Video Slideshow with Timeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vantacrow Birthday Spawn Date</title>
+    <meta name="description" content="Celebrating Vantacrow's spawn!">
+    <link rel="stylesheet" href="vanta.css">
+  <style>
+      /* add any custom styles we need here */
+    </style>
 </head>
 <body>
     <!--Overlay-->
     <div class="main">
-      <div class="btn-group">
-        <button id="introbtn"></button>
-        <button id="comicbtn"></button>
-        <button id="albumbtn"></button>
-        <button id="clipsbtn"></button>
-        <button id="creditBtn"></button>
-        <button id="musicvideobtn"></button>
+        <div class="btn-group">
+            <button onclick="openModuleFirstSet('myModal')">Intro</button>
+            <button onclick="openModuleSecondSet('ComicModel', 'Comics')">Comics</button>
+            <button onclick="openModuleThirdSet('AlbumModel', 'Albums')">Album</button>
+            <button onclick="openModule('clipsbtn')">clips</button>
+            <button onclick="openModule('musicbtn')">music</button>
+            <button onclick="openModule('creditbtn')">credit</button>
       </div>
       <!--Background Image-->
-      <div class="slideshow-container1" style="background-image: url('Vantacrow Birthday Background.png');"></div>
-    </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!--WriterMessage Intro Content-->
-          <span class="close" onclick="closeModel()">×</span>
-          <h2>Vantacrow Spawn Day</h2>
-          <div class="modal-body"></div>
-        </div><!--Body Text if needed-->
-        <p>YAY VANTA</p>
-        <div></div>
-      <div class="modal-body">
-        <p>
-    <strong>The Vantacrow Photo Album
-    </strong> text written by writing team Let's Get Celebrating woooo!
-        </p>
-      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModule('myModal')">×</span>
+                <h2>Vantacrow Spawn Day</h2>
+            </div>
+                <p>YAY VANTA</p>
+                <p><strong>The Vantacrow Photo Album</strong> text written by writing team Let's Get Celebrating woooo!</p>
+            </div>
+        </div>
     </div>
     <!-- ComicModel -->
-    <div id="ComicModel" class="modal2">
-      <div class="modal-content2">
-        <div class="modal-header2">
-          <span class="close2" onclick="closeComicModel()">&times;</span>
-          <h2>Comics</h2>
-        </div>
-        <div class="slideshowcontainer2">
-        </div>
-        <div class="slideshowcontainer2">
+    <div id="ComicModel" class="modal">
+      <div id ="Comics" class="openModuleSecondSet"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+              <span class="close" onclick="closeModule('ComicModel')">&times;</span>
+              <h2>Comics</h2>
+          </div>
+          <div class="slideshow-containerB">
           <div class="my2Slide fade">
             <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Comic 1" style="width: 100%;"></div>
         <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Comic 2" style="width: 100%;"></div>
@@ -118,13 +111,14 @@
         <div style="text-align:center"></div><a class="prev2" onclick="plus2Slides(-1)">❮</a> <a class="next2" onclick="plus2Slides(1)">❯</a>
     </div>
     <!--Album-->
-    <div id="AlbumModel" class="modal3">
-      <div class="modal-content3">
-        <div class="modal-header3">
-          <span class="close3" onclick="closeAlbumModel()">&times;</span>
-          <h2>Album</h2>
-        </div>
-        <div class="slideshowcontainer3">
+    <div id="AlbumModel" class="modal">
+      <div id ="Albums" class="openModuleThirdSet"></div>
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close" onclick="closeModule('AlbumModel')">&times;</span>
+              <h2>Album</h2>
+          </div>
+          <div class="slideshow-containerD">
          <div class="my2Slide fade">
           <div class="my2Slide fade"><img src="imagesource1.jpg" alt="Album 1" style="width: 100%;"></div>
         <div class="my2Slide fade"><img src="imagesource2.jpg" alt="Album 2" style="width: 100%;"></div>
@@ -215,27 +209,27 @@
     justify-content: space-between;
     transform: translateY(-50%);
   }
-     </style>
-    <!-- Video Slideshow Container -->
-    <div class="slideshow-container">     
-       <!-- Video Slide 1 -->
-      <div class="myVideoSlide">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dd33KWeTUkQ" frameborder="0" allowfullscreen></iframe>
-      </div>
-    
+</style>
+ <!-- Video Slideshow Container -->
+ <div class="slideshow-container">
+    <!-- Video Slide 1 -->
+    <div class="myVideoSlide">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dd33KWeTUkQ" frameborder="0" allowfullscreen></iframe>
+  </div> 
       <!-- Video Slide 2 -->
-      <div class="myVideoSlide">
-        <!-- Replace the video ID in the src attribute -->
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      </div>
-    
+      <div class="myVideoSlide">       
+       <!-- Replace the video ID in the src attribute -->
+       <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
       <!-- Add more video slides as needed -->
     
       <!-- Navigation Controls -->
       <div class="controls">
         <button onclick="prevSlide()">Previous</button>
         <button onclick="nextSlide()">Next</button>
-      </div>
+    </div>
+</div>
    <script>
       let currentSlide = 0;
     
@@ -272,15 +266,13 @@
     
       // Show the first slide on page load
       showSlide(currentSlide);
-    </script>
-    <title>Video Slideshow with Timeline</title>
+   </script>
     <style>
         .timeline-container {
             display: flex;
             align-items: center;
             margin-top: 20px;
         }
-
         .timeline-bar {
             height: 10px;
             background-color: #ccc;
@@ -303,11 +295,11 @@
     </style>
 <!-- Timeline -->
 <div class="timeline-container">
-    <div class="timeline-bar">
-        <div class="timeline-progress"></div>
-    </div>
-    <div class="timeline-date">Date 1</div>
-    <div class="timeline-date">Date 2</div>
+  <div class="timeline-bar">
+      <div class="timeline-progress"></div>
+  </div>
+  <div class="timeline-date">Date 1</div>
+  <div class="timeline-date">Date 2</div>
     <!-- Add more dates as needed -->
 </div>
 <script>
@@ -315,18 +307,22 @@
     const timelineDates = document.querySelectorAll('.timeline-date');
     const totalSlides = timelineDates.length; // Assuming each date corresponds to a slide
     const progressWidth = (currentSlide / (totalSlides - 1)) * 100;
-
-    timelineProgress.style.width = `${progressWidth}%`;
-
+timelineProgress.style.width = `${progressWidth}%`;
     for (let i = 0; i < totalSlides; i++) {
         timelineDates[i].style.fontWeight = i === currentSlide ? 'bold' : 'normal';
     }
+</script>
+
 //Audio Model
-    function play() {
-      var audio = document.getElementById("audio");
-      audio.play();
-      audio.volume = 0.3;
-    }
+<audio id="audio" src="your-audio-file.mp3"></audio>
+<script>
+function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            audio.volume = 0.3;
+        }
+      </script>
+<script>
 //Comic Model
 var model2Comic = document.getElementById("ComicModel");
    var btn2Comic = document.getElementById("comicbtn");
@@ -358,10 +354,12 @@ var model2Comic = document.getElementById("ComicModel");
     function closeAlbumModel() {
       model3Album.style.display = "none";
     }
+</script>
+<script>
 //Video Slides
-  let currentSlide = 0;
+  let currentSlides = 0;
 
-  function showSlide(n) {
+  function showSlides(n) {
     const slides = document.querySelectorAll('.myVideoSlide');
 
     // Hide All Slides
@@ -388,81 +386,90 @@ var model2Comic = document.getElementById("ComicModel");
   showSlide(currentSlide);
  
   //Album Gallery Function 
-  function plus3Slides(n)  {
-    show3Slides(slide3Index +=n)
+  function plus3Slides(n) {
+  show3Slides(slide3Index += n);
   function current3Slide(n) {
     show3Slides(slide3Index = n);
   }
 }
-function show3Slides (n) {
-  let i;
-  let slides = document.getElementsByClassName("my3Slides");
-  if (n > slides.length) {slides3Index =1}
-  if (n <1) {slide3Index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+function show3Slides(n) {
+    let i;
+    let slides = document.getElementsByClassName("my3Slides");
+    if (n > slides.length) { slides3Index = 1 }
+    if (n < 1) { slide3Index = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slides3Index - 1].style.display = "block";
 }
 slides[slides3Index-1].style.display = "block";
 let slide3Index = 1;
 show3Slides(slide3Index);
-  
-  // First set of functions JAVASCRIPT
-function openModuleFirstSet(moduleId) {
-  closeAllModules();
-  document.getElementById(moduleId).style.display = "block";
-}
+</script>
+<script>
+    // First set of functions
+    function openModuleFirstSet(moduleId) {
+      closeAllModulesFirstSet();
+      document.getElementById(moduleId).style.display = "block";
+    }
 
-function closeAllModulesFirstSet() {
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    modal.style.display = 'none';
-  });
-}
+    function closeAllModulesFirstSet() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';
+      });
+    }
 
-function closeModuleFirstSet(moduleId) {
-  document.getElementById(moduleId).style.display = "none";
-}
+    function closeModuleFirstSet(moduleId) {
+      document.getElementById(moduleId).style.display = "none";
+    }
 
-// Second set of functions
-function openModuleSecondSet(moduleId, content) {
-  closeAllModules();
-  document.getElementById(moduleId).style.display = "block";
-  setModalContent(content);
-}
+    // Second set of functions
+    function openModuleSecondSet(moduleId, content) {
+      closeAllModulesSecondSet();
+      document.getElementById(moduleId).style.display = "block";
+      setModalContent(content);
+    }
 
-function closeAllModulesSecondSet() {
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    modal.style.display = 'none';
-  });
-}
-
-function setModalContent(content) {
-  const modalBody = document.querySelector('.modal-body');
-  modalBody.innerHTML = `<p>${content} Content here</p>`;
-}
+    function closeAllModulesSecondSet() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';
+      });
+    }
+    function setModalContent(content) {
+      const modalBody = document.querySelector('.modal-body');
+      modalBody.innerHTML = `<p>${content} Content here</p>`;
+    } 
+  </script>
+  <script>
 //Trigger Buttons
-  document.addEventListener('DOMContentLoaded', function() {
-  const introBtn = document.getElementById('openMyModalButton');
-  const comicsBtn = document.getElementById('comicbtn');
-  const albumBtn = document.getElementById('albumbtn');
-  
-  const modelIntro = document.getElementById('myModal');
-  const modelComics = document.getElementById('ComicModel');
-  const modelAlbum = document.getElementById('AlbumModel');
+document.addEventListener('DOMContentLoaded', function () {
+    const introBtn = document.getElementById('openMyModalButton');
+    const comicsBtn = document.getElementById('ComicModel');
+    const albumBtn = document.getElementById('AlbumModel');
 
-  introBtn.addEventListener('click', function() {
-    openModule('myModal');
-  });
+    const modelIntro = document.getElementById('myModal');
+    const modelComics = document.getElementById('ComicModel');
+    const modelAlbum = document.getElementById('AlbumModel');
 
-  comicsBtn.addEventListener('click', function() {
-    openModule('ComicModel');
-  });
+    if (introBtn) {
+        introBtn.addEventListener('click', function () {
+            openModuleFirstSet('myModal');
+        });
+    }
 
-  albumBtn.addEventListener('click', function() {
-    openModule('AlbumModel');
-  });
+    if (comicsBtn) {
+        comicsBtn.addEventListener('click', function () {
+            openModuleSecondSet('ComicModel', 'Comics');
+        });
+    }
+
+    if (albumBtn) {
+    albumBtn.addEventListener('click', function () {
+        openModuleThirdSet('AlbumModel', 'Albums');
+        });
+    }
 });
 </script>
   </div>

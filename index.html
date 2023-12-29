@@ -349,20 +349,20 @@
       model2Comic.style.display = "none";
     }
  // Album Model
- var model3Album = document.getElementById("Albums");
-    var btn3Album = document.getElementById("Albums");
-    var span3Album = document.getElementsByClassName("close3")[0];
-    btn3Album.onclick = function () {
-      model3Album.style.display = "block";
-    };
+ var model3Album = document.getElementById("AlbumsModal"); // Update this line
+var btn3Album = document.getElementById("Albums");
+var span3Album = document.getElementsByClassName("close3")[0];
+btn3Album.onclick = function () {
+  model3Album.style.display = "block";
+};
 
-    span3Album.onclick = function () {
-      model3Album.style.display = "none";
-    };
+span3Album.onclick = function () {
+  model3Album.style.display = "none";
+};
 
-    function closeAlbums() {
-      model3Album.style.display = "none";
-    }
+function closeAlbums() {
+  model3Album.style.display = "none";
+}
   </script>
 <script>
   // Video Slides

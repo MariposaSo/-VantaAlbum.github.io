@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vanta Birthday Spawn Day</title>
+  <title>Vantacrow Birthday Spawn Date</title>
   <meta name="description" content="Celebrating Vantacrow's spawn!">
   <link rel="stylesheet" href="vanta.css">
   <style>
     /* Styles for modal container, modal content, and close button */
-  .modal-container {
+    .modal-container {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,7 +36,6 @@
       right: 10px;
       cursor: pointer;
     }
-
     /* Styles for main container */
     .main {
       display: grid;
@@ -46,18 +45,6 @@
       z-index: 1;
     }
 
-    /* Add your other styles here */
-    .btn-group button {
-      max-width: 140px;
-      max-height: 900px;
-      border: 2px solid #6b47c6;
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 10px;
-      z-index: 1;
-      cursor: url(cursor.png), auto;
-      display: block;
-    }
     .full-screen-modal-container {
       width: 100%;
       height: 100%;
@@ -70,14 +57,6 @@
   </style>
 </head>
 <body>
-
-  <div class="main">
-    <div class="btn-group">
-      <button id="introBtn">Intro</button>
-      <button id="comicsBtn">Comics</button>
-      <button id="albumBtn">Album</button>
-    </div>
-
     <!-- Overlay for Intro -->
     <div id="myModalIntro" class="modal">
       <div class="modal-container" onclick="toggleModule('myModalIntro')"></div>
@@ -325,46 +304,7 @@
       }
     </script>
 <script>
-  var isOpen = false;
-
-  function toggleModule(moduleId) {
-    var modal = document.getElementById(moduleId);
-    modal.style.visibility = isOpen ? 'hidden' : 'visible';
-    isOpen = !isOpen;
-  }
       // Java Code
-       // Comic Model
-    var model2Comic = document.getElementById("Comics");
-    var btn2Comic = document.getElementById("Comics");
-    var span2Comic = document.getElementsByClassName("close2")[0];
-    btn2Comic.onclick = function () {
-      model2Comic.style.display = "block";
-    };
-
-    span2Comic.onclick = function () {
-      model2Comic.style.display = "none";
-    };
-
-    function closeComics() {
-      model2Comic.style.display = "none";
-    }
- // Album Model
- var model3Album = document.getElementById("AlbumsModal"); // Update this line
-var btn3Album = document.getElementById("Albums");
-var span3Album = document.getElementsByClassName("close3")[0];
-btn3Album.onclick = function () {
-  model3Album.style.display = "block";
-};
-
-span3Album.onclick = function () {
-  model3Album.style.display = "none";
-};
-
-function closeAlbums() {
-  model3Album.style.display = "none";
-}
-  </script>
-<script>
   // Video Slides
   let currentSlides = 0;
 
@@ -393,7 +333,8 @@ function closeAlbums() {
 
   // Show the first slide on page load
   showSlide(currentSlide);
-  // Album Gallery Function
+  
+// Album Gallery Function
   let slide3Index = 1;
 function plus3Slides(n) {
   show3Slides(slide3Index += n);
@@ -414,80 +355,6 @@ function show3Slides(n) {
 }
 show3Slides(slide3Index);
   </script>
-
-  <script>
-    // First set of functions
-    function openModuleFirstSet(moduleId) {
-      closeAllModulesFirstSet();
-      document.getElementById(moduleId).style.visibility = "visible";
-    }
-
-    function closeAllModulesFirstSet() {
-      const modals = document.querySelectorAll('.modal-container');
-      modals.forEach(modal => {
-        modal.style.visibility = 'hidden';
-      });
-    }
-    function closeModuleFirstSet(moduleId) {
-      document.getElementById(moduleId).style.visibility = "hidden";
-    }
-
-    function openModuleSecondSet(moduleId) {
-      closeAllModulesSecondSet();
-      document.getElementById(moduleId).style.visibility = "visible";
-    }
-
-    function closeAllModulesSecondSet() {
-      const modals = document.querySelectorAll('.modal-container');
-      modals.forEach(modal => {
-        modal.style.visibility = 'hidden';
-      });
-    }
-
-    function closeModule(moduleId) {
-      document.getElementById(moduleId).style.visibility = "hidden";
-    }
-
-    // Trigger Buttons
-    document.addEventListener('DOMContentLoaded', function () {
-      closeAllModules();
-
-      const introBtn = document.getElementById('introBtn');
-      const comicsBtn = document.getElementById('comicsBtn');
-      const albumBtn = document.getElementById('albumBtn');
-
-      if (introBtn) {
-        introBtn.addEventListener('click', function () {
-          toggleModule('myModalIntro');
-        });
-      }
-
-      if (comicsBtn) {
-        comicsBtn.addEventListener('click', function () {
-          toggleModule('ComicsModal');
-        });
-      }
-
-      if (albumBtn) {
-        albumBtn.addEventListener('click', function () {
-          toggleModule('AlbumsModal');
-        });
-      }
-    });
-
-    function toggleModule(moduleId) {
-      const modal = document.getElementById(moduleId);
-      modal.style.visibility = modal.style.visibility === 'visible' ? 'hidden' : 'visible';
-    }
-
-    function closeAllModules() {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => {
-        modal.style.visibility = 'hidden';
-      });
-    }
-    </script>
   </div>
 </body>
 </html>
-<img src="VantaBD_Coverart_smile(eyes).png" class="comic-style1">

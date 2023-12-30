@@ -49,9 +49,6 @@ img {
 .mySlides {
     text-align: center;
 }
-<!--overlay div-->
-<div id="overlay" onclick="off()"></div>
-<div class="slideshow-container">…</div>
 #overlay {
     width: 100vw;
     height: 100vh;

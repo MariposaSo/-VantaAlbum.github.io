@@ -64,6 +64,7 @@ img {
     background-position: center;
     background-position-x: center;
     background-position-y: center;
+    Position: fixed is there
     z-index: 2;
 }
 * {

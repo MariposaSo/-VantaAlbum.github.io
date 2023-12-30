@@ -49,3 +49,23 @@ img {
 .mySlides {
     text-align: center;
 }
+element.style {
+}
+birthday2024/:718
+#overlay {
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+   position: absolute;
+   background-image: url("VantaBD_Coverart_smile.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   z-index: 2;
+}
+birthday2024/:1120
+* {
+   box-sizing: border-box;
+}

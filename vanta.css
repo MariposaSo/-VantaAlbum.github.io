@@ -64,3 +64,9 @@ element.style {
     background-position: center;
     z-index: 2;
 }
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}

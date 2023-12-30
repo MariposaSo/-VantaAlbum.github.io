@@ -51,7 +51,6 @@ img {
 }
 element.style {
 }
-birthday2024/:718
 #overlay {
    width: 100vw;
    height: 100vh;
@@ -64,6 +63,27 @@ birthday2024/:718
    background-size: cover;
    background-position: center;
    z-index: 2;
+}
+element.style {
+}
+.comic-style {
+    width: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 10px solid black;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.mySlides {
+    text-align: center;
 }
 birthday2024/:1120
 * {
